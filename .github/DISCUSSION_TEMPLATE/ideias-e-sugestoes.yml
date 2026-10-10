@@ -1,0 +1,55 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Conte onde o atendimento fica difícil e o que ajudaria seu time.
+        Antes de enviar, pesquise se já existe uma discussão sobre o assunto.
+        Use exemplos fictícios. Não publique dados de clientes, senhas ou chaves de API.
+  - type: dropdown
+    id: produto
+    attributes:
+      label: Qual produto está relacionado à sua sugestão?
+      options:
+        - Trinket OS
+        - TrinketOS Learn
+        - Comunidade
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema você enfrenta?
+      description: Explique a situação e quem é afetado.
+    validations:
+      required: true
+  - type: textarea
+    id: processo-atual
+    attributes:
+      label: Como você resolve isso hoje?
+      description: Conte seu processo atual e as dificuldades que encontra.
+    validations:
+      required: true
+  - type: textarea
+    id: resultado
+    attributes:
+      label: O que gostaria de conseguir fazer?
+      description: Explique o resultado esperado. Se tiver uma proposta de solução, inclua também.
+    validations:
+      required: true
+  - type: textarea
+    id: impacto
+    attributes:
+      label: Como isso afeta o atendimento?
+      description: Conte a frequência do problema e o impacto no trabalho do time.
+    validations:
+      required: true
+  - type: textarea
+    id: exemplo
+    attributes:
+      label: Exemplo ou contexto adicional
+      description: Opcional. Revise imagens e relatos para remover informações privadas.
+  - type: markdown
+    attributes:
+      value: |
+        As sugestões ajudam a orientar a evolução do produto.
+        O envio não representa compromisso de implementação ou prazo de entrega.
